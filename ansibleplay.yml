@@ -1,0 +1,12 @@
+---
+ - name: Install Java
+   hosts: webservers
+   gather_facts: false
+   tasks:
+    - name: Update repos
+      yum: 
+        name: "*"
+        state: lastest
+    - name: Installing Java
+      yum:
+        name: java-1.8.0-openjdk
