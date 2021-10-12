@@ -14,6 +14,7 @@
 
 <p>It is based on the Image <strong><%= System.getenv("BOXFUSE_IMAGE_COORDINATES")%>
 </strong> generated from <strong><%= System.getenv("BOXFUSE_PAYLOAD_NAME")%>
+    <p> This is been updated and build part of CI CD </p>
 </strong></p>
 
 <% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
