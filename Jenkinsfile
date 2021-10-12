@@ -10,6 +10,7 @@ pipeline {
         stage('checkout') {
             steps {
                 // Get some code from a GitHub repository
+                sh 'rm -fr JenkinsDemo'
                 git branch: 'master', url: 'https://github.com/mailyathish/JenkinsDemo.git'
                 
             }
